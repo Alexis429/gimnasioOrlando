@@ -1,0 +1,136 @@
+//agregar usuario
+<div class="div">
+    <div class="card">
+        <div class="card-header">
+            Agregar un usuario nuevo
+        </div>
+        <div class="card-body">
+
+            <input type="text" #name>
+            <input type="email" #email>
+            <input type="password" #password>
+            <input type="number" #edad>
+            <input type="text" #estado>
+            <button type="submit" (click)="registrouser(name.value, email.value, password.value, edad.value, estado.value)"> Registrar </button>
+        </div>
+        <div class="card-body">
+
+            <!-- <form [formGroup]="crearusuario" (ngSubmit)="registrouser()">
+                 [formGroup]="formulariodeUsuario" (ngSubmit)="enviarDatos()" 
+                <div class="mb-3">
+                    <label for="" class="form-label"> identificación : </label>
+                    <input type="text" class="form-control" formControlName="identificacion" id="identificacion" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> Nombre : </label>
+                    <input type="email" class="form-control" formControlName="nombre" id="nombre" aria-describedby="helpId" placeholder="ingresa tu correo">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> Apellido : </label>
+                    <input type="text" class="form-control" formControlName="apellido" id="apellido" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> email : </label>
+                    <input type="text" class="form-control" formControlName="email" id="email" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> codigo : </label>
+                    <input type="text" class="form-control" formControlName="codigo" id="codigo" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> contrasena : </label>
+                    <input type="text" class="form-control" formControlName="contrasena" id="contrasena" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> roles : </label>
+                    <input type="text" class="form-control" formControlName="roles" id="roles" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label"> estadouser : </label>
+                    <input type="text" class="form-control" formControlName="estadouser" id="estadouser" aria-describedby="helpId" placeholder="ingresa tu nombre">
+                </div>
+                <button type="submit" class="btn btn-succes" type="submit">Agregar</button>
+                <button type="button" class="btn btn-primary">Cancelar</button>
+            </form> -->
+        </div>
+    </div>
+
+</div>
+//editar usuario
+<div class="card">
+    <div class="card-header">
+        Editar un usuario
+    </div>
+    <div class="card-body">
+
+        <form>
+            <div class="mb-3">
+                <label for="" class="form-label"> identificación : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> Nombre : </label>
+                <input type="email" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu correo">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> Apellido : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> email : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> codigo : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> contrasena : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> roles : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label"> estadouser : </label>
+                <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="ingresa tu nombre">
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button type="button" class="btn btn-succes">Agregar</button>
+                <button type="button" class="btn btn-primary">Cancelar</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+// lista de usuarios
+<div class="card">
+    <div class="card-header">
+        Usuarios
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>nombre</th>
+                    <th>correo</th>
+                    <th>acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1</td>
+                    <td> alexis</td>
+                    <td>alexismt04@hotmail.com</td>
+                    <td>
+                        <a routerLink="/editar-usuario/1">editar</a> | borrar </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
